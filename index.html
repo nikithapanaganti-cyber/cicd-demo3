@@ -1,0 +1,28 @@
+pipeline
+{ agent any
+stages
+{
+stage("checkout")
+{ steps {
+echo"checking out source code.."
+}
+}
+stage(build)
+{ steps {
+echo"building the application.."
+}
+}
+stage(test)
+{ steps {
+echo"testing the application..."
+echo"all test cases are pased successfully.."
+}
+}
+stage(deploy)
+{ steps {
+echo"Deployed the application.."
+echo""application deployed successfully..."
+}
+}
+}
+}
